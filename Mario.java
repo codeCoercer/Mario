@@ -1,16 +1,21 @@
 
+// Prints the half pyramid as seen in the classic
+// Mario game. The size of the pyramid is determined
+// by user input.
+
 import java.util.Scanner;
 
 public class Mario {
 	public static void main(String[] args) {
 		
-		int num = getInt(new Scanner(System.in));
+		int num = getInt();
 		printHalfPyramid(num);
 		
 	}
 	
 	// Asks the user for an int
-	public static int getInt(Scanner sc) {
+	public static int getInt() {
+		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter a number: ");
 		String num = sc.next();
 		
